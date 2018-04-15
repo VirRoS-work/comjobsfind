@@ -12,7 +12,7 @@ public class Contact {
 
     private String value;
 
-    @OneToOne(cascade =  CascadeType.ALL)
+    @OneToOne
     @JoinColumn(name = "contacttype_id")
     private ContactType type;
 
